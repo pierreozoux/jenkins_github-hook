@@ -7,7 +7,7 @@
 # Licence WTFPL
 #
 
-include_recipe "jenkins"
+include_recipe "jenkins::server"
 
 if node['jenkins']['github_hook']['webserver'] == "nginx"
 	include_recipe "jenkins_github-hook::reverse-proxy_nginx"
