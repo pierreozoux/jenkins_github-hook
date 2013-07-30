@@ -7,7 +7,7 @@
 # Licence WTFPL
 #
 
-include_recipe "nginx::source"
+include_recipe "nginx"
 
 host_name = node['jenkins']['github_hook']['host_name'] || node['fqdn']
 
